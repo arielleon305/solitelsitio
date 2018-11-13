@@ -800,7 +800,7 @@ Fuente del logo estilizada
    Counter Section Style
    ========================================================================== */
 .counters {
-  background: url(../img/bg1.jpg) fixed;
+  background: url(../img/bg_1a.jpg) fixed;
   position: relative;
 }
 .counters .facts-item {
@@ -876,6 +876,10 @@ Fuente del logo estilizada
 }
 .btn i {
   margin-right: 5px;
+}
+
+.soporte h4 p{
+  color: #fff;
 }
 /* ==========================================================================
    Blog
