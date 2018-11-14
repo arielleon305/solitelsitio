@@ -1044,6 +1044,11 @@ footer {
   padding: 60px 0px 30px;
   text-align: center;
 }
+
+.maps h4 span {
+  color: #fff;
+
+}
 .site-info p {
   line-height: 34px;
   color: #fff;
