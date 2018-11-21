@@ -1088,6 +1088,24 @@ footer {
   color: #ffffff;
 }
 
+/*DISEÑO ADAPTATIVO PARA MAPS*/
+.google-maps {
+  position: relative;
+  padding-bottom: 20%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+
 .social-icons ul li a:hover {
   color: #ffffff;
 }
