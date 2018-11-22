@@ -1045,6 +1045,22 @@ footer {
   text-align: center;
 }
 
+/*DISEÑO ADAPTATIVO PARA MAPS*/
+.google-maps {
+  position: relative;
+  padding-bottom: 20%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+/*------------------------------*/
+
 .maps h4 span {
   color: #fff;
 
@@ -1088,27 +1104,50 @@ footer {
   color: #ffffff;
 }
 
-/*DISEÑO ADAPTATIVO PARA MAPS*/
-.google-maps {
-  position: relative;
-  padding-bottom: 20%; // This is the aspect ratio
-  height: 0;
-  overflow: hidden;
-}
-.google-maps iframe {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-
-
-
 .social-icons ul li a:hover {
   color: #ffffff;
 }
+
+
+/*========FOOTER DATA ============*/
+
+.social-data {
+  margin-bottom: 10px;
+}
+.social-data ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social-data ul li {
+  display: inline;
+}
+.social-data ul li a {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 254, 254, 0.07);
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.social-data h5 {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.social-data ul li a:hover {
+  color: #ffffff;
+}
+
+
+
+
 .facebook a {
   color: #4867aa;
 }
