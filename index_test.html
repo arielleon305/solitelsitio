@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Grayrids">
+    <meta name="author" content="Grayrids Solitel">
     <title>SOLITEL | Soluciones Informáticas y Telecom</title>
 
     <!-- Bootstrap CSS -->
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/menu_sideslide.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="shadowbox/shadowbox.css">
 
   </head>
   <body>
@@ -291,16 +292,14 @@
             </div>
             <!-- Portfolio Controller/Buttons Ends-->
 
-
             <!-- Portfolio Recent Projects -->
             <div id="portfolio" class="row wow fadeInUp" data-wow-delay="0.8s">
               <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix telecom">
                 <div class="portfolio-item">
                   <div class="shot-item textPortf">
                     <span>Amplificador Señal Celular 3G</span>
-                    <a class="overlay lightbox" href="img/portfolio/telecom/3g.gif"/>
-                    <img src="img/portfolio/telecom/3g.jpg" alt="" />
-                    <i class="lnr lnr-plus-circle item-icon"></i>
+                      <a href="img/portfolio/desarr/encu.jpg" rel="shadowbox[3g]"><img class="thumb" src="img/portfolio/desarr/encu.jpg"/>
+                      <i class="lnr lnr-plus-circle item-icon"></i>
                     </a>
                   </div>
                 </div>
@@ -801,6 +800,12 @@
       </div>
     </div>
 
+    <div class="invisible">
+    				<a href="img/portfolio/desarr/encu.jpg" rel="shadowbox[3g]"></a>
+            <a href="img/portfolio/desarr/web1.jpg" rel="shadowbox[3g]"></a>
+    			</div>
+
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="js/jquery-min.js"></script>
     <script src="js/tether.min.js"></script>
@@ -822,6 +827,7 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/main.js"></script>
+    <script src="shadowbox/shadowbox.js"></script>
 
   </body>
 </html>
