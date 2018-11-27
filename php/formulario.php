@@ -2,10 +2,10 @@
 //Comprobamos que se haya presionado el boton enviar
 if(isset($_POST[‘submit’])){
 //Guardamos en variables los datos enviados
-$nombre = $_POST[‘name’];
-$email = $_POST[’email’];
-$asunto = $_POST[‘msg_subject’];
-$mensaje = $_POST[‘mensaje’];
+$nombre = strip_tags($_POST[‘name’]);
+$email = strip_tags($_POST[’email’]);
+$asunto = strip_tags($_POST[‘msg_subject’]);
+$mensaje = strip_tags($_POST[‘mensaje’]);
 
 ///Validamos del lado del servidor que el nombre y el email no estén vacios
 if($nombre == ”){
