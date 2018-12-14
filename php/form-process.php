@@ -32,8 +32,8 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "info@solitel.com.ar";
-$Subject = "Nuevo Mensaje desde Solitel.com.ar";
+$EmailTo = info@solitel.com.ar;
+$Subject = Nuevo Mensaje desde Solitel.com.ar;
 
 // prepare email body text
 $Body = "";
