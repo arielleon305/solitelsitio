@@ -26,7 +26,7 @@ if (empty($_POST["msg_subject"])) {
 
 // MESSAGE
 if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
+    $errorMSG .= "Message is required";
 } else {
     $message = $_POST["message"];
 }
