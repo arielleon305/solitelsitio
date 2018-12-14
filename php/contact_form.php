@@ -68,7 +68,7 @@ if(isset($_POST['email'])) {
 
   if(!preg_match($string_exp,$msg_subject)) {
 
-    $error_message .= 'el formato del apellido no es válido.<br />';
+    $error_message .= 'el formato del Asunto no es válido.<br />';
 
   }
 
