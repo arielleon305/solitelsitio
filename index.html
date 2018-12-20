@@ -675,34 +675,36 @@
                 <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Contact <span>Us</span></h2>
                 <hr class="lines wow zoomIn" data-wow-delay="0.3s">
               </div>
-              <form id="contactForm" action="php/contact_form.php" method="post">
+              <form id="contactForm" name="contactform" data-toggle="validator" method="post">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                      <input name="fname" id="fname" placeholder="Nombre*" class="form-control" type="text" required data-error="Por favor ingresa tu nombre">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+                      <input name="email" id="email" placeholder="E-mail*" pattern=".*@\w{2,}\.\w{2,}" class="form-control" type="email" required data-error="Por favor ingresa un correo electrónico válido">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                    <div class="col-md-12">
                     <div class="form-group">
-                      <input type="text" placeholder="Subject" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
+                      <input name="subject" id="subject" placeholder="Asunto*" class="form-control" type="text" required data-error="Por favor ingresa el asunto">
+                      <!-- <input type="text" placeholder="Subject" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject"> -->
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                     <textarea name="message" class="form-control" placeholder="Your Message" rows="11" data-error="Write your message" required></textarea>
+                     <textarea rows="3" name="message" id="message" placeholder="Escribe tu comentario aquí*" class="form-control" required data-error="Por favor ingresa un mensaje"></textarea>
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="submit-button text-center">
                       <button class="btn btn-common" id="submit" type="submit">Enviar Mensaje</button>
                       <div id="msgSubmit" class="h3 text-center hidden"></div>
+                      <span class="sub-text">* Campos requeridos</span>
                       <div class="clearfix"></div>
                     </div>
                   </div>
@@ -805,6 +807,11 @@
       </div>
     </div>
 
+    <div class="invisible">
+      <a href="img/portfolio/desarr/encu.jpg" rel="shadowbox[DS]"></a>
+      <a href="img/portfolio/desarr/web1.jpg" rel="shadowbox[DS]"></a>
+    </div>
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="js/jquery-min.js"></script>
     <script src="js/tether.min.js"></script>
@@ -824,7 +831,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
+    <script src="js/contact-form.js"></script>
     <script src="js/main.js"></script>
 
   </body>

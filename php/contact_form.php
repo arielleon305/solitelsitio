@@ -17,7 +17,7 @@ if(isset($_POST['email'])) {
 
         echo $error."<br /><br />";
 
-        echo "Porfavor corrije los errores e inténtelo de nuevo.<br /><br />";
+        echo "Por favor corrije los errores e inténtelo de nuevo.<br /><br />";
         die();
     }
 
