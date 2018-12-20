@@ -26,14 +26,14 @@ if (empty($_POST["msg_subject"])) {
 
 // MESSAGE
 if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required";
+    $errorMSG .= "Message is required ";
 } else {
     $message = $_POST["message"];
 }
 
 
-$EmailTo = info@solitel.com.ar;
-$Subject = Nuevo Mensaje desde Solitel.com.ar;
+$EmailTo = "info@solitel.com.ar";
+$Subject = "New Message Received";
 
 // prepare email body text
 $Body = "";
