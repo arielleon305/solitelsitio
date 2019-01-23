@@ -4,21 +4,21 @@ $errorMSG = "";
 
 // NAME
 if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "Nombre Requerido ";
 } else {
     $name = $_POST["name"];
 }
 
 // EMAIL
 if (empty($_POST["email"])) {
-    $errorMSG .= "Email is required ";
+    $errorMSG .= "Email requerido ";
 } else {
     $email = $_POST["email"];
 }
 
 // MSG SUBJECT
 if (empty($_POST["msg_subject"])) {
-    $errorMSG .= "Subject is required ";
+    $errorMSG .= "Asunto Requerido ";
 } else {
     $msg_subject = $_POST["msg_subject"];
 }
@@ -26,14 +26,14 @@ if (empty($_POST["msg_subject"])) {
 
 // MESSAGE
 if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
+    $errorMSG .= "Mensaje Requerido ";
 } else {
     $message = $_POST["message"];
 }
 
 
 $EmailTo = "info@solitel.com.ar";
-$Subject = "New Message Received";
+$Subject = "NUEVO MENSAJE DESDE LA WEB";
 
 // prepare email body text
 $Body = "";
